@@ -23,6 +23,7 @@ ostream& operator<<(ostream& s, const vector<T> v)
    	return s << ']';
 }
 
+// Definindo um tipo de vector que só recebe inteiros.
 typedef vector<int> intVector;
 
 int main()
@@ -44,6 +45,20 @@ int main()
 	// Construindo um vector apartir dos valores de outro.
 	intVector numbers4( numbers3 );
 	cout << "numbers4: " << numbers4 << endl;
+	
+	// Construindo um vector com 5 posições, cada uma inicializada com 0.
+	intVector numbers5( 5, 0);
+	cout << "numbers5: " << numbers5 << endl;
+	
+	/*
+	Saída:
+	
+	numbers1: 1
+	numbers2: [1, 2, 3, 4, 5]
+	numbers3: [1, 2, 3, 4, 5]
+	numbers4: [1, 2, 3, 4, 5]
+	numbers5: [0, 0, 0, 0, 0]
+	*/
 	
 	return 0;
 }
