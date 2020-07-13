@@ -8,11 +8,8 @@ using std::vector;
 #include <iostream>
 using std::ostream;
 
-#include <locale>
-
 // Sobrecarregando o operador de saída <<, para que possa imprimir o vector entre conchetes e separado por vírgulas.
-template<typename T>
-ostream& operator<<(ostream& s, const vector<T> v) 
+ostream& operator<<(ostream& s, const vector<int> v) 
 {
    	s.put('[');
    	char virgula[3] = { '\0', ' ', '\0'};
@@ -27,19 +24,17 @@ ostream& operator<<(ostream& s, const vector<T> v)
 typedef vector<int> intVector;
 
 int main()
-{
-	setlocale( LC_ALL, "portuguese" );
-	
+{	
 	// Construindo um vector vazio.
 	intVector numbers1();
 	cout << "numbers1: " << numbers1 << endl;
 	
 	// Construindo um vector com valores específicos.
-	intVector numbers2 { 1, 2, 3, 4, 5};
+	intVector numbers2 { 1, 2, 3, 4, 5 };
 	cout << "numbers2: " << numbers2 << endl;
 	
 	// Construindo um vector com os valores de outro vector do primeiro ao último.
-	intVector numbers3( numbers2.begin(), numbers2.end());
+	intVector numbers3( numbers2.begin(), numbers2.end() );
 	cout << "numbers3: " << numbers3 << endl;
 	
 	// Construindo um vector apartir dos valores de outro.
@@ -47,7 +42,7 @@ int main()
 	cout << "numbers4: " << numbers4 << endl;
 	
 	// Construindo um vector com 5 posições, cada uma inicializada com 0.
-	intVector numbers5( 5, 0);
+	intVector numbers5( 5, 0 );
 	cout << "numbers5: " << numbers5 << endl;
 	
 	/*
