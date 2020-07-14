@@ -62,5 +62,10 @@ int main()
 	for_each(nums.rbegin(), nums.rend(), [](const int n) { cout << n << ' ';});
 	if ( vazio.rbegin() == vazio.rend() )
 		cout << "\nÚltima fruta: " << *frutas.rbegin() << endl;
+	/*
+	Saída:
+	Agora na ordem inversa: 13 30 4 23
+	Última fruta: banana
+	*/
 	return 0;
 }
