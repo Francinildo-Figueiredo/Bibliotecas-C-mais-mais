@@ -41,8 +41,8 @@ int main()
 	
 	/*
 	Utilizando o elemento de acesso at: ele acessa os elementos do vector da mesma maneira que o operador[], só que antes
-	de acessar o valor ele derifica se aquela posição do vector existe, se não existir ele lança uma excessão. Quando não
-	fazemos esse tipo de tratamento e tentamos acessar uma posição que não existe o programa encerra sua execução.
+	de acessar o valor ele verifica se aquela posição do vector existe, se não existir ele lança uma excessão. Quando não
+	fazemos esse tipo de tratamento, e tentamos acessar uma posição que não existe, o programa encerra sua execução.
 	*/
 	
 	cout << "Saída 6: " << frase.at(3) << ' ' << frase.at(4) << endl;
