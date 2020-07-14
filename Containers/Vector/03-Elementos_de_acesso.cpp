@@ -26,10 +26,10 @@ int main()
 	// Utilizando o operedor[] para acessar o vector.
 	cout << "\nSaída 2: " << frase[1] << ' ' << frase[2] << ' ' << frase[4] << endl;
 	
-	// utilizando  o front, ele acessa o primeiro elemento do vector.
+	// Utilizando  o elemento de acesso front: ele acessa o primeiro elemento do vector.
 	cout << "Saída 3: " << frase.front() << endl;
 	
-	// utilizando  o back, ele acessa o último elemento do vector.
+	// Utilizando  o elemento de acesso back: ele acessa o último elemento do vector.
 	cout << "Saída 4: " << frase.back() << endl;
 	
 	/*
