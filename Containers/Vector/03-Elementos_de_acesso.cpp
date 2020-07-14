@@ -18,7 +18,7 @@ int main()
 	setlocale( LC_ALL, "portuguese" );
 	
 	vector<string> frase {"Manipular", "vector", "é", "muito", "fácil."};
-	// Impriminto o vector por meio de iterators.
+	// Imprimindo o vector por meio de iterators.
 	cout << "Saída 1: ";
 	for (vector<string>::const_iterator it = frase.begin(); it != frase.end(); it++)
 		cout << *it << ' ';
