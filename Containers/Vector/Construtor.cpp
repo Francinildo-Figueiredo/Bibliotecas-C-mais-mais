@@ -26,7 +26,7 @@ typedef vector<int> intVector;
 int main()
 {	
 	// Construindo um vector vazio.
-	intVector numbers1();
+	intVector numbers1;
 	cout << "numbers1: " << numbers1 << endl;
 	
 	// Construindo um vector com valores específicos.
