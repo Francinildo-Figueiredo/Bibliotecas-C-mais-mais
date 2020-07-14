@@ -33,7 +33,7 @@ int main()
 	intVector numbers2 { 1, 2, 3, 4, 5 };
 	cout << "numbers2: " << numbers2 << endl;
 	
-	// Construindo um vector com os valores de outro vector do primeiro ao último.
+	// Construindo um vector utilizando os iterators de ínicio e fim de outro vector.
 	intVector numbers3( numbers2.begin(), numbers2.end() );
 	cout << "numbers3: " << numbers3 << endl;
 	
