@@ -4,8 +4,6 @@ using std::endl;
 
 #include <vector>
 using std::vector;
-#include <algorithm>
-using std::for_each;
 
 #include <locale>
 
