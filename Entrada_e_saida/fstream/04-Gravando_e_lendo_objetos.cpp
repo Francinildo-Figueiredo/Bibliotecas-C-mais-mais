@@ -12,7 +12,7 @@ using std::ios;
 class Pessoa{
 	private:
 		char nome[50];
-		char cpf[11];
+		char cpf[20];
 		short int idade;
 		double altura;
 	public:
