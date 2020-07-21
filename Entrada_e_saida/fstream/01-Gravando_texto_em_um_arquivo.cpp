@@ -12,8 +12,8 @@ int main()
 {
 	setlocale( LC_ALL, "portuguese" );
 	
-	// Criando um arquivo txt para receber o texto.
-	ofstream arquivo("Exemplo1.txt");
+	// Criando uma variável do tipo ofstream para criação e gravação do texto.
+	ofstream arquivo("Exemplo1.txt"); // Arquivo criado por meio do construtor.
 	char crt;
 	
 	cout << "Pressione CTRL_Z para sair."
