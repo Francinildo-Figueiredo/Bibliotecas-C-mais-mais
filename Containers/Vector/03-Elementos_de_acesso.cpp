@@ -6,7 +6,7 @@ using std::endl;
 using std::vector;
 
 #include <stdexcept>
-using std::out_of_range; // Excessão que indica a busca de uma posição fora do tamanho do vector.
+using std::out_of_range; // Exceção que indica a busca de uma posição fora do tamanho do vector.
 
 #include <string>
 using std::string;
@@ -41,18 +41,18 @@ int main()
 	
 	/*
 	Utilizando o elemento de acesso at: ele acessa os elementos do vector da mesma maneira que o operador[], só que antes
-	de acessar o valor ele verifica se aquela posição do vector existe, se não existir ele lança uma excessão. Quando não
+	de acessar o valor ele verifica se aquela posição do vector existe, se não existir ele lança uma exceção. Quando não
 	fazemos esse tipo de tratamento, e tentamos acessar uma posição que não existe, o programa encerra sua execução.
 	*/
 	
 	cout << "Saída 6: " << frase.at(3) << ' ' << frase.at(4) << endl;
 	
-	// Agora utilizaremos um tratamento de excessões para lançar-mos a excessão do at.
+	// Agora utilizaremos um tratamento de excessões para lançar-mos a exceção do at.
 	try{
 		// Tentando acessar uma posição do vector que não existe.
 		cout << "Saída 7: " << frase.at(8) << endl;
 	}catch( out_of_range const& exc ){
-		// Lançando a excessão "fora do tamanho", que explica o ocorrido sem encerrar a execução.
+		// Lançando a exceção "fora do tamanho", que explica o ocorrido sem encerrar a execução.
 		cout << exc.what() << endl;
 	}
 	
